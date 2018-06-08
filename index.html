@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Images generator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta property="og:title" content="Image Generator"/>
+	<meta property="og:description" content="I'm thinking"/>
+	<meta property="og:url" content="http://ka.com:9123/image_generator.html"/>
+	<meta property="og:image" content="images/1.jpg"/> -->
+	<link rel="icon" type="image/png" href="images/favicon_ka.png">
+	<link rel="stylesheet" href="css/normalize.css"></link>
+	<link rel="stylesheet" href="css/media.css"></link>
+	<link rel="stylesheet" href="css/image_generator.css"></link>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/image_generator.js"></script>
+</head>
+<body>
+	<h1>Images Generator</h1>
+	<a class="share lineShare col-xs-push-8 col-xs-2 col-sm-push-8 col-sm-2 col-lg-push-8 col-lg-2" href="javascript:void(0)">LINE</a>
+	<a class="share fbShare col-xs-push-8 col-xs-2 col-sm-push-8 col-sm-2 col-lg-push-9 col-lg-2" href="javascript:void(0)">FACEBOOK</a>
+	<a class="share githubShare col-xs-push-8 col-xs-2 col-sm-push-8 col-sm-2 col-lg-push-10 col-lg-2" target="_blank" href="https://github.com/yschen25">GITHUB</a>
+
+	<div id="paletteWrapper" class="col-xs-push-1 col-xs-10 col-sm-push-2 col-sm-8 col-lg-push-3 col-lg-6"></div>
+	<div id="penWrapper" class="col-xs-push-1 col-xs-10 col-sm-push-2 col-sm-8 col-lg-push-3 col-lg-6"></div>
+	<!-- <div id="eraser">Eraser</div> -->
+	
+	<div id="wrapper">
+		<canvas id="canvas">
+			Hey! Try another browser.
+			<img id="uploadImg">
+		</canvas>
+		
+		<div id="imgsWrapper">
+			<div class="otherImg col-xs-push-1 col-xs-10 col-sm-push-3 col-sm-6 col-lg-push-6 col-lg-2">
+				<img class="imgs" src="images/1.jpg">
+			</div>
+			<div class="otherImg col-xs-push-1 col-xs-10 col-sm-push-3 col-sm-6 col-lg-push-6 col-lg-2">
+				<img class="imgs" src="images/2.jpg">
+			</div>
+			<div class="otherImg col-xs-push-1 col-xs-10 col-sm-push-3 col-sm-6 col-lg-push-6 col-lg-2">
+				<img class="imgs" src="images/3.jpg">
+			</div>
+			<div class="otherImg col-xs-push-1 col-xs-10 col-sm-push-3 col-sm-6 col-lg-push-6 col-lg-2">
+				<img class="imgs" src="images/0.jpg">
+			</div>
+			<div class="otherImg col-xs-push-1 col-xs-10 col-sm-push-3 col-sm-6 col-lg-push-6 col-lg-2">
+				<img class="imgs" src="images/5.jpg">
+			</div>
+		</div>
+	</div>
+
+	<div id="clearFix"></div>
+
+	<label id="btnStyle" class="col-xs-push-3 col-xs-6 col-sm-push-4 col-sm-4 col-lg-push-5 col-lg-2" for="uploadButton">Upload Image</label>
+	<input id="uploadButton" accept="image/*" type="file">
+
+	<span>Customize Text : </span>
+	<input id="cusText" type="text" placeholder="There's No Place Like 127.0.0.1">
+
+	<p id="filenameDesc" class="col-xs-push-1 col-xs-10 col-sm-push-3 col-sm-6 col-lg-push-1 col-lg-10">Customize your filename or just press the download button below : D</p>
+	<span>Customize Filename : </span>
+	<input id="cusImgName" type="text" placeholder="Rick and Morty is awesome!">
+
+	<a id="downloadBtn" href="images/0.jpg" download="image_generator_ByKa.jpg">Download NOW</a>
+</body>
+</html>

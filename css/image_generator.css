@@ -1,0 +1,291 @@
+body{
+	background-color: #fffbf4;
+	font-family: 'Noto Sans TC';
+	text-align: center;
+}
+
+/*==========================================*/
+/*@font-face{
+	font-family: 'Noto Sans TC';
+	unicode-range: U+4E00-9FFF;
+	src: local('Noto Sans TC'),
+		 local('Heiti TC');
+}
+
+@font-face{
+	font-family: 'Helvetica';
+	unicode-range: U+00-024F;
+	src: local('Helvetica'),
+		 local('Segoe UI');
+}*/
+
+h1{
+	margin: 30px auto 20px auto;
+}
+
+#wrapper{
+	width: 500px;
+    height: 350px;
+    padding: 10px;
+    margin: auto;
+}
+
+#canvas{
+	display: block;
+    float: left;
+    margin: 10px auto 30px;
+    cursor: url(../images/brush.png) 5 35, auto;
+}
+
+#imgsWrapper{
+    width: 70px;
+    height: 300px;
+    display: block;
+    float: left;
+    margin-top: 5px;
+}
+
+.otherImg{
+    height: 50px;
+    margin: 10px;
+}
+
+.imgs{
+    height: 50px;
+    cursor: pointer;
+}
+
+span{
+	margin: 0 5px;
+}
+
+#uploadImg{
+	display: none;
+	margin:  auto;
+	margin-bottom: 30px;
+}
+
+#btnStyle{
+	display: block;
+	position: relative;
+	margin: auto;
+	background: #e24a4a;
+	text-decoration: none;
+	cursor: pointer;
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 30px;
+	overflow: hidden;
+	-webkit-transition: all 0.15s ease-in;
+	transition: all 0.15s ease-in;
+}                  
+
+#btnStyle:before{
+	content: ' ';
+	position: absolute;
+	background-color: rgba(255, 255, 255, .3);
+	width: 40px;
+	height: 40px;
+	top: 0;
+	left: -50px;
+	-webkit-transition: all 0.25s ease-out;
+	transition: all 0.25s ease-out;
+	-webkit-transform: skewX(-25deg);
+	     transform: skewX(-25deg);
+}                  
+                
+#btnStyle:hover{
+	background: #fd9b46;
+}
+
+#btnStyle:hover:before{
+	width: 40px;
+	left: 350px;
+}  
+
+#uploadButton{
+	display: none;
+}
+
+#filenameDesc{
+	position: relative;
+	font-size: 1rem;
+}
+
+#filenameDesc:before{
+	content: "";
+    display: block;
+    position: absolute;
+    width: 90vw;
+    top: -12px;
+    left: 50%;
+    margin-left: -45vw;
+    border: 1px dashed #aaa;
+}
+
+#cusImgName{
+	width: 220px;
+    height: 20px;
+    padding: 5px 10px;
+	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+#cusText{
+	width: 220px;
+    height: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+#downloadBtn{
+	display: block;
+	position: relative;
+	margin: auto;
+	background: #605d63;
+	text-decoration: none;
+	color: #fff;
+	width: 120px;
+	height: 35px;
+	padding: 0 12px;
+	margin-bottom: 15px;
+	line-height: 35px;
+	border-radius: 4px;
+	overflow: hidden;
+	-webkit-transition: all 0.1s ease-in;
+	transition: all 0.1s ease-in;
+}                  
+                        
+#downloadBtn:hover{
+	background: #8b8a8c;
+}
+
+.share{
+	display: inline-block;
+	margin: auto;
+	text-decoration: none;
+	color: #fff;
+	width: 200px;
+	height: 35px;
+	padding: 0 12px;
+	line-height: 35px;
+	border-radius: 4px;
+	margin: auto 10px 20px auto;
+}  
+
+.lineShare{
+	background: #00B900;
+}  
+
+.fbShare{
+	background: #4267B2;
+}  
+
+.githubShare{
+	background: #24292E;
+}
+
+#paletteWrapper{
+	height: 50px;
+	margin: auto;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.option{
+	width: 50px;
+	height: 50px;
+	margin: 0 .9vw 1vh;
+	float: left;
+	outline: 2px solid #aaa;
+}
+
+#penWrapper{
+	height: 50px;
+	margin: auto;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.penBox{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	margin: 0 .9vw 1vh;
+	float: left;
+	outline: 2px solid #aaa;
+}
+
+.penSize{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 100%;
+}
+
+.active{
+	outline: 2px solid black !important;
+}
+
+#eraser{
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	margin: auto;
+	outline: 2px solid #aaa;
+}
+
+
+/*=======================Media Setting=====================*/
+
+@media screen and (max-width:320px){
+
+	#wrapper{
+		width: 100vw;
+		padding: 0;
+	}
+
+}
+
+@media screen and (min-width:321px) and (max-width:1000px){
+
+	#wrapper{
+		width: 90vw;
+		padding: 0;
+	}
+
+}
+
+@media screen and (max-width:767px){
+
+	#canvas{
+	    margin: 50px auto 30px;
+	}
+
+	#imgsWrapper{
+	    display: inline-block;
+	    margin-top: 75px;
+	}
+
+	.otherImg{
+	    height: 35px; 
+	    margin: 10px auto;
+	}
+
+	.imgs{
+		height: 30px;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width:1200px){
+
+	.share{
+		width: 100px;
+	}
+
+}
