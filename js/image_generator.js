@@ -131,7 +131,6 @@ $(function(){
 		sizeChoice = ($('.penSize', this).data('value'));
 	});
 	
-
 	// Start drawing
 	var $canvas = $('#canvas');
 	var drawMode = false;
@@ -177,13 +176,6 @@ $(function(){
         ctx.closePath();
     });
 
-    // Not use now
-    $('#eraser').click(function(){
-        paint = false;
-    	$('.option').removeClass('active');
-    	$(this).addClass('active');
-    })
-
     // Change canvas width 'n' heigh when the device is phone
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 		canvas.width  = 250;
@@ -191,7 +183,14 @@ $(function(){
 	}
 
 	// Share by line 
-	// $('.lineShare').click(function(){
-	// 	window.open('https://lineit.line.me/share/ui?url='+encodeURIComponent("http://ka.com:9123/image_generator.html"),"_blank","toolbar=yes,location=yes,directories=no,status=no, menubar=yes,scrollbars=yes,resizable=no, copyhistory=yes,width=600,height=400")
-	// })
+	$('.lineShare').click(function(){
+		window.open('https://lineit.line.me/share/ui?url='+encodeURIComponent("http://ka.com:9123/image_generator.html"),"_blank","toolbar=yes,location=yes,directories=no,status=no, menubar=yes,scrollbars=yes,resizable=no, copyhistory=yes,width=600,height=400")
+	})
+
+    // Eraser tool
+    // $('#eraser').click(function(){
+    //     paint = false;
+    // 	$('.option').removeClass('active');
+    // 	$(this).addClass('active');
+    // })
 })

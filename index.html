@@ -2,35 +2,44 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 	<title>Images generator</title>
+	<meta property="og:title" content="Images Generator"/>
+	<meta property="og:description" content="You can choose brush size and color then draw on the image, you can also customize the text on the image and customize filename"/>
+	<meta property="og:url" content="https://yschen25.github.io/Images_Generator/"/>
+	<meta property="og:image" content="images/sample.jpg"/>
+
+	<meta name="author" content="Yi-Shiuan Chen,yschen,yschen25,Ka,KaKa,陳翊萱,(https://github.com/yschen25)">
+	<meta name="keywords" content="html,css,javascript,jQuery,canvas,ui,ux,design">
+	<meta namge="description" content="website building,website designing,website drawing, drawing online,線上小畫家,線上Canvasc繪圖" />
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- <meta property="og:title" content="Image Generator"/>
-	<meta property="og:description" content="I'm thinking"/>
-	<meta property="og:url" content="http://ka.com:9123/image_generator.html"/>
-	<meta property="og:image" content="images/1.jpg"/> -->
 	<link rel="icon" type="image/png" href="images/favicon_ka.png">
 	<link rel="stylesheet" href="css/normalize.css"></link>
 	<link rel="stylesheet" href="css/media.css"></link>
 	<link rel="stylesheet" href="css/image_generator.css"></link>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
 	<script type="text/javascript" src="js/image_generator.js"></script>
 </head>
 <body>
 	<h1>Images Generator</h1>
-	<a class="share lineShare col-xs-push-8 col-xs-2 col-sm-push-8 col-sm-2 col-lg-push-8 col-lg-2" href="javascript:void(0)">LINE</a>
-	<a class="share fbShare col-xs-push-8 col-xs-2 col-sm-push-8 col-sm-2 col-lg-push-9 col-lg-2" href="javascript:void(0)">FACEBOOK</a>
-	<a class="share githubShare col-xs-push-8 col-xs-2 col-sm-push-8 col-sm-2 col-lg-push-10 col-lg-2" target="_blank" href="https://github.com/yschen25">GITHUB</a>
+
+	<a class="share lineShare" href="javascript:void(0)">LINE</a>
+	<div class="line-it-button" data-lang="zh_Hant" data-type="share-b" data-url="https://yschen25.github.io/Images_Generator/" style="display: none;"></div>
+
+	<a class="share fbShare" href="javascript:void(0)">FACEBOOK</a>
+
+	<a class="share githubShare" target="_blank" href="https://github.com/yschen25">GITHUB</a>
 
 	<div id="paletteWrapper" class="col-xs-push-1 col-xs-10 col-sm-push-2 col-sm-8 col-lg-push-3 col-lg-6"></div>
 	<div id="penWrapper" class="col-xs-push-1 col-xs-10 col-sm-push-2 col-sm-8 col-lg-push-3 col-lg-6"></div>
-	<!-- <div id="eraser">Eraser</div> -->
 	
 	<div id="wrapper">
 		<canvas id="canvas">
 			Hey! Try another browser.
 			<img id="uploadImg">
 		</canvas>
-		
 		<div id="imgsWrapper">
 			<div class="otherImg col-xs-push-1 col-xs-10 col-sm-push-3 col-sm-6 col-lg-push-6 col-lg-2">
 				<img class="imgs" src="images/1.jpg">
@@ -49,11 +58,11 @@
 			</div>
 		</div>
 	</div>
-
 	<div id="clearFix"></div>
 
-	<label id="btnStyle" class="col-xs-push-3 col-xs-6 col-sm-push-4 col-sm-4 col-lg-push-5 col-lg-2" for="uploadButton">Upload Image</label>
+	<a id="btnStyle"><label for="uploadButton">Upload Image</label></a>
 	<input id="uploadButton" accept="image/*" type="file">
+	<p>Notice : Now images size only support under 400px * 300px</p>
 
 	<span>Customize Text : </span>
 	<input id="cusText" type="text" placeholder="There's No Place Like 127.0.0.1">
