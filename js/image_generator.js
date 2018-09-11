@@ -182,11 +182,6 @@ $(function(){
 		canvas.height = 300;
 	}
 
-	// Share by line 
-	// $('.lineShare').click(function(){
-	// 	window.open('https://lineit.line.me/share/ui?url='+encodeURIComponent("https://yschen25.github.io/Images_Generator/"),"_blank","toolbar=yes,location=yes,directories=no,status=no, menubar=yes,scrollbars=yes,resizable=no,copyhistory=yes,width=600,height=400")
-	// })
-
 	// Share by fb 
 	(function(d, s, id) {
 		var js, fjs = d.getElementsByTagName(s)[0];

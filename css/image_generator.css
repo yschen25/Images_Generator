@@ -17,15 +17,15 @@ span{
 }
 
 .share{
-	display: inline-block !important;
-	margin: auto !important;
-	text-decoration: none !important;
-	color: #fff !important;
-	height: 35px !important;
-    padding: 0 3% !important;
-	line-height: 35px !important;
-	border-radius: 4px !important;
-	margin: auto 10px 20px auto !important;
+	display: inline-block;
+	margin: auto;
+	text-decoration: none;
+	color: #fff;
+	height: 35px;
+    padding: 0 3%;
+	line-height: 35px;
+	border-radius: 4px;
+	margin: auto 10px 20px auto;
 }
 
 .lineShare{
