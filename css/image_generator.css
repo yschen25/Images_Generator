@@ -124,6 +124,7 @@ span{
     height: 20px;
     padding: 5px 10px;
     font-size: 14px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -154,17 +155,16 @@ span{
 	margin: auto;
 	text-decoration: none;
 	color: #fff;
-	width: 200px;
 	height: 35px;
-	padding: 0 12px;
+    padding: 0 3%;
 	line-height: 35px;
 	border-radius: 4px;
 	margin: auto 10px 20px auto;
-}  
+}
 
 .lineShare{
 	background: #00B900;
-}  
+} 
 
 .fbShare{
 	background: #4267B2;
@@ -226,7 +226,6 @@ span{
 }*/
 
 /*=======================Media Setting=====================*/
-/*
 @media screen and (max-width:320px){
 
 	#wrapper{
@@ -245,11 +244,11 @@ span{
 
 }
 */
-/*@media screen and (max-width:767px){
+@media screen and (max-width:767px){
 
-	#canvas{
+	/*#canvas{
 	    margin: 50px auto 30px;
-	}
+	}*/
 
 	#imgsWrapper{
 	    display: inline-block;
@@ -265,12 +264,4 @@ span{
 		height: 30px;
 		margin: 0;
 	}
-}*/
-
-/*@media screen and (max-width:1200px){
-
-	.share{
-		width: 100px;
-	}
-
-}*/
+}
