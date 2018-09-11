@@ -176,7 +176,7 @@ $(function(){
         ctx.closePath();
     });
 
-    // Change canvas width 'n' heigh when the device is phone
+    // Change canvas width 'n' height when the device is phone
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 		canvas.width  = 250;
 		canvas.height = 300;
@@ -202,4 +202,5 @@ $(function(){
     // 	$('.option').removeClass('active');
     // 	$(this).addClass('active');
     // })
+
 })

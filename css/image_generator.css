@@ -8,40 +8,104 @@ h1{
 	margin: 30px auto 20px auto;
 }
 
+p{
+	line-height: 1.5;
+}
+
+span{
+	margin: 0 5px;
+}
+
+.share{
+	display: inline-block;
+	margin: auto;
+	text-decoration: none;
+	color: #fff;
+	height: 35px;
+    padding: 0 3%;
+	line-height: 35px;
+	border-radius: 4px;
+	margin: auto 10px 20px auto;
+}
+
+.lineShare{
+	background: #00B900;
+} 
+
+.fbShare{
+	background: #4267B2;
+}  
+
+.githubShare{
+	background: #24292E;
+}
+
+#paletteWrapper{
+	height: 50px;
+	margin: auto;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.option{
+	width: 50px;
+	height: 50px;
+	margin: 0 .9vw 1vh;
+	float: left;
+	outline: 2px solid #aaa;
+}
+
+#penWrapper{
+	height: 120px;
+	margin: auto;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.penBox{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	margin: 0 .9vw 1vh;
+	float: left;
+	outline: 2px solid #aaa;
+}
+
+.penSize{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 100%;
+}
+
+.active{
+	outline: 2px solid black !important;
+}
+
 #wrapper{
-	width: 500px;
-    height: 350px;
-    padding: 10px;
+    position: relative;
+    width: 620px;
     margin: auto;
 }
 
 #canvas{
 	display: block;
-    float: left;
-    margin: 10px auto 30px;
+    margin: 10px auto 44px;
     cursor: url(../images/brush.png) 5 35, auto;
 }
 
 #imgsWrapper{
-    width: 70px;
-    height: 300px;
-    display: block;
-    float: left;
-    margin-top: 5px;
-}
-
-.otherImg{
-    height: 50px;
-    margin: 10px;
+    position: absolute;
+    top: -9px;
+    right: 26px;
 }
 
 .imgs{
+	display: block;
     height: 50px;
+    margin-bottom: 25%;
     cursor: pointer;
-}
-
-span{
-	margin: 0 5px;
 }
 
 #uploadImg{
@@ -150,73 +214,6 @@ span{
 	background: #8b8a8c;
 }
 
-.share{
-	display: inline-block;
-	margin: auto;
-	text-decoration: none;
-	color: #fff;
-	height: 35px;
-    padding: 0 3%;
-	line-height: 35px;
-	border-radius: 4px;
-	margin: auto 10px 20px auto;
-}
-
-.lineShare{
-	background: #00B900;
-} 
-
-.fbShare{
-	background: #4267B2;
-}  
-
-.githubShare{
-	background: #24292E;
-}
-
-#paletteWrapper{
-	height: 50px;
-	margin: auto;
-	margin-bottom: 15px;
-	cursor: pointer;
-}
-
-.option{
-	width: 50px;
-	height: 50px;
-	margin: 0 .9vw 1vh;
-	float: left;
-	outline: 2px solid #aaa;
-}
-
-#penWrapper{
-	height: 90px;
-	margin: auto;
-	margin-bottom: 15px;
-	cursor: pointer;
-}
-
-.penBox{
-	position: relative;
-	width: 50px;
-	height: 50px;
-	margin: 0 .9vw 1vh;
-	float: left;
-	outline: 2px solid #aaa;
-}
-
-.penSize{
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    border-radius: 100%;
-}
-
-.active{
-	outline: 2px solid black !important;
-}
-
 /*#eraser{
 	width: 100px;
 	height: 50px;
@@ -226,42 +223,25 @@ span{
 }*/
 
 /*=======================Media Setting=====================*/
-@media screen and (max-width:320px){
+@media screen and (max-width:767px){
+
+	#penWrapper{
+		margin-bottom: 120px;
+	}
 
 	#wrapper{
 		width: 100vw;
-		padding: 0;
 	}
-
-}
-
-@media screen and (min-width:321px) and (max-width:1000px){
-
-	#wrapper{
-		width: 90vw;
-		padding: 0;
-	}
-
-}
-*/
-@media screen and (max-width:767px){
-
-	/*#canvas{
-	    margin: 50px auto 30px;
-	}*/
 
 	#imgsWrapper{
-	    display: inline-block;
-	    margin-top: 75px;
-	}
-
-	.otherImg{
-	    height: 35px; 
-	    margin: 10px auto;
+		position: relative;
+		margin-bottom: 3vh;
+		right: 0;
 	}
 
 	.imgs{
-		height: 30px;
-		margin: 0;
+	    height: 40px;
+	    margin: 0 1vw 3vh auto;
+	    display: inline-block;
 	}
 }
