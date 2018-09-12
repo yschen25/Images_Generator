@@ -35,9 +35,9 @@
 </p>
 <br/>
 
-4. You can post this website link by facebook   
+4. You can post this website link by facebook
 <p align="center">
-   <img src="https://i.imgur.com/Tu2HM89.gif" alt="Images_Generator_fb_posting" title="Images_Generator_fb_posting">
+   <img src="https://i.imgur.com/Tu2HM89.gif" alt="Images_Generator_fb_posting" title="Images_Generator_fb_posting" width="95%">
 </p>
 <br/>
 
