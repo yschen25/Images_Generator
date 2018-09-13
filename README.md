@@ -57,8 +57,8 @@
 
 * **2018.09.12**
 
-         * Add RWD
-         * Add Facebook, line posting and sharing 
+         * Adding RWD
+         * Adding Facebook, line posting and sharing 
 <br/>
 
 ## Demo Editor Tools
