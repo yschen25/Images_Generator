@@ -1,11 +1,8 @@
 # Images_Generator
 
-        * You can choose brush size, color to draw on the image, 
-          you can also customize text on the image and customize the filename
+You can choose brush size, color to draw on the image on this website, you can also customize the text on the image and filename, finally download it, or you can upload your own image then draw it!
 
-        * ..OR You can do above things on your own images 
-
-        * Rick and Morty is still awesome
+Rick and Morty is still awesome.
 <br/>
     
 ## Demo
