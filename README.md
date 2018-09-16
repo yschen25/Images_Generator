@@ -36,19 +36,19 @@ Rick and Morty is still awesome.
 
 4. You can post this website link by facebook
 <p align="center">
-   <img src="https://i.imgur.com/Tu2HM89.gif" alt="Images_Generator_fb_posting" title="Images_Generator_fb_posting" width="95%">
+   <img src="https://i.imgur.com/0os9WT4.gif" alt="Images_Generator_fb_posting" title="Images_Generator_fb_posting" width="95%">
 </p>
 <br/>
 
 5. You can send this website link by facebook messenger
 <p align="center">
-   <img src="https://i.imgur.com/O1VlyPf.gif" alt="Images_Generator_fb_sending" title="Images_Generator_fb_sending" width="30%">
+   <img src="https://i.imgur.com/lAKVoKy.gif" alt="Images_Generator_fb_sending" title="Images_Generator_fb_sending" width="30%">
 </p>
 <br/>
 
 6. You can send this website link by line
 <p align="center">
-   <img src="https://i.imgur.com/fx1A5Hm.gif" alt="Images_Generator_line_sending" title="Images_Generator_line_sending" width="30%">
+   <img src="https://i.imgur.com/8wN3p6l.gif" alt="Images_Generator_line_sending" title="Images_Generator_line_sending" width="30%">
 </p>
 <br/>
 
@@ -61,4 +61,4 @@ Rick and Morty is still awesome.
 <br/>
 
 ## Demo Editor Tools
-Using [ScreenToGif](http://www.screentogif.com/) to record, [ezGIF](https://ezgif.com/) to edit, [imgur](https://imgur.com/) to upload gifs
+Using [ScreenToGif](http://www.screentogif.com/) to record, [ezGIF](https://ezgif.com/) to edit and [imgur](https://imgur.com/) to upload gifs.
