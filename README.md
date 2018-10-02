@@ -11,13 +11,11 @@ Rick and Morty is still awesome.
 
 ### **[Images_Generator](https://yschen25.github.io/Images_Generator/)**
 **Where You Can Draw Oneline**
-<br/>
-<br/>
-<br/>
 
 <p align="center">
    <img src="images/sample05.png" alt="Images_Generator" title="Images_Generator" width="50%">
 </p>
+<br/>
 <br/>
 
 1. You can choose brush size, color to draw on the image 
