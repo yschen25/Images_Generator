@@ -1,11 +1,22 @@
 # Images_Generator
 
-<p>You can choose brush size, color to draw on the image on this website, you can also customize the text on the image and filename, finally download it, or you can upload your own image then draw it!
+This website is offering user to draw on the web.
+<br/>
+
+## Description
+
+<p>You can choose brush size, color to draw on the image on this website, you can also customize the text on the image and filename, finally download it, or you can upload your own image then to draw it!
 
 Rick and Morty is still awesome.
 </p>
 <br/>
 
+## Author
+* **:octocat: Front-End : [Me](https://github.com/yschen25)**
+        
+      HTML、CSS、jQuery、Canvas
+
+<br/>
     
 ## Demo
 
